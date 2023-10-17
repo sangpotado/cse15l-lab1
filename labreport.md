@@ -1,10 +1,10 @@
 # Lab Report 1
 # A Blog post about commands `cd`, `ls`, and `cat`
 
- ## 1. cd
+## 1. cd
  
 - ### No argument
-- 
+  
 ![cdnoarg](cd no arg.jpg)
 
 The current directory is `/lecture1/`. 
@@ -14,7 +14,7 @@ As we call command `cd`, the terminal goes to its home directory, which is `/hom
 This is not an error.
 
 - ### Directory
-- 
+  
 ![cddir](cd dir.jpg)
 
 The working directory is `/home`. 
@@ -36,7 +36,7 @@ As command is called, the terminal prints out an error message, informing the us
 ## 2. ls
 
 - ### No argument
-- 
+  
 ![lsnoarg](ls no arg.jpg)
 
 The working directory is `/home`. 
@@ -46,7 +46,7 @@ The working directory is `/home`.
 This is not an error.
 
 - ### Directory
-- 
+  
 ![lsdir](ls dir.jpg)
 
 The working directory is `/home`.
@@ -56,7 +56,7 @@ The command `ls lecture1/` accesses the `lecture1/` directory within working dir
 Command does not produce errors. Unless the argument is a relative path, and that path does not exist within working directory.
 
 - ### Filename
-- 
+  
 ![lsfilename](ls filename.jpg)
 
 The working directory is `/home`.
