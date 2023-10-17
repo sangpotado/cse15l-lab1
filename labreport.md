@@ -10,7 +10,8 @@
 The current directory is `/lecture1/`. 
 
 As we call command `cd`, the terminal goes to its home directory, which is `/home`.
-Command does not produce errors.
+
+This is not an error.
 
 - ### Directory
 - 
@@ -19,7 +20,8 @@ Command does not produce errors.
 The working directory is `/home`. 
 
 As we call command `cd lecture1/`, the terminal goes to directory `/home/lecture1/`.
-Command does not produce errors.
+
+This is not an error.
 
 - ### Filename
 - 
@@ -40,7 +42,8 @@ As command is called, the terminal prints out an error message, informing the us
 The working directory is `/home`. 
 
 `ls` without argument prints out the list of files in the current working directory.
-Command does not produce errors.
+
+This is not an error.
 
 - ### Directory
 - 
@@ -84,7 +87,7 @@ The working directory is `/home`.
 
 The terminal informs user that `lecture1/` is a directory, there's nothing to print out for output.
 
-The command produces errors. 
+This is an error. 
 
 - ### Filename
 
@@ -93,3 +96,5 @@ The command produces errors.
 The working directory is `/home`.
 
 The terminal prints out the content of the file in form of text
+
+This is not an error.
