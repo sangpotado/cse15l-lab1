@@ -55,11 +55,15 @@ After:
 ```
 
 ### Briefly describe why the fix addresses the issue: 
-the `before` functions iterate through the whole array, it directly assigns `arr[i]` with `arr[arr.length - i - 1]`, so when `i` gets to `arr.length/2`, the first of of the array will be identical in-reversed to the last half. 
+The `before` function iterates through the whole array, it directly assigns `arr[i]` with `arr[arr.length - i - 1]`, so when `i` gets to `arr.length/2`, the first of of the array will be identical in-reversed to the last half. 
+
+To fix this, `after` function interate through `arr.length/2`, it creates variable `temp` to store value of `arr[i]`, then swap `arr[i]` with `arr[arr.length - i - 1]`l
 
 ## Part 2 - Research Commands
 
 Chosen command: `grep`
+
+Source: Google Bard, because ChatGPT is already too popular
 
 Here are 4 grep command-line options:
 
@@ -67,40 +71,58 @@ Here are 4 grep command-line options:
 
 ```
 grep -i "RNA" technical/plos/*
-![grepignore](part2grepignore.png)
 ```
+![grepignore](part2grepignore.png)
 
 ```
 grep -i Intern technical/plos/*
+```
 ![grepignore2](part2-i2.png)
-```
 
-* **-l** (list filenames only): This option tells grep to only print the filenames of files that contain matches, rather than printing the matching lines themselves. For example, the following command will print a list of all files in the current directory that contain the word "hello":
+* **-l** (list filenames only): This option tells grep to only print the filenames of files that contain matches, rather than printing the matching lines themselves. For example, the following command will print a list of all files in the current directory that contain the word "rna" (example 1) and "RNA" (example 2):
 
 ```
-grep -l hello .
+grep -l rna technical/plos/* .
 ```
 ![grep-l](part2-l.png)
 
+```
+grep -l "RNA" technical/plos/*
+```
+![grep-l2](part2-l2.png)
 
-* **-n** (print line numbers): This option tells grep to print the line numbers of all matching lines. For example, the following command will print the line numbers of all lines in the file "myfile.txt" that contain the word "hello":
+
+
+* **-n** (print line numbers): This option tells grep to print the line numbers of all matching lines. For example, the following command will print the line numbers of all lines in the files "pmed.00*.txt" that contain the word "RNA" (example 1) and "base" (example 2):
 
 ```
-grep -n hello myfile.txt
+grep -n RNA technical/plos/pmed.00*.txt
 ```
+![grep-n1](part2-n1.png)
 
-* **-c** (count matches): This option tells grep to count the number of lines that match the pattern, rather than printing the matching lines themselves. For example, the following command will print the number of lines in the file "myfile.txt" that contain the word "hello":
+```
+grep -n base pair plos/pmed.00*.txt
+```
+![grep-n2](part2-n2.png)
+
+* **-c** (count matches): This option tells grep to count the number of lines that match the pattern, rather than printing the matching lines themselves. For example, the following command will print the number of lines in the files that contain the word "RNA" (example 1).
 
 ```
-grep -c hello myfile.txt
+grep -c RNA plos/pmed.00*.txt
 ```
+![grep-c1](part2-c1.png)
+
+example 2, one file
+```
+grep -c RNA plos/pmed.0010010.txt
+```
+![grep-c2](part2-c2.png)
 
 These are just a few of the many grep command-line options that are available. For more information, please see the grep man page.
 
-Here is an example of how to use grep with multiple options:
+Here is an example of how to use grep with multiple options. This command print out the line number of files (using `-n`) that contain "RNA", "rna"... (using `-i`)
 
 ```
-grep -i -n hello myfile.txt
+grep -i -n RNA plos/pmed.00*
 ```
-
-This command will print the line numbers of all lines in the file "myfile.txt" that contain the word "hello", ignoring case.
+![grepfinal](part2final.png)
