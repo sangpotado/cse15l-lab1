@@ -63,7 +63,7 @@ To fix this, `after` function interate through `arr.length/2`, it creates variab
 
 Chosen command: `grep`
 
-Source: Google Bard, because ChatGPT is already too popular
+Source: Google Bard, because ChatGPT is already too popular. Prompt given to Bard: `provide 4 grep command-line options `
 
 Here are 4 grep command-line options:
 
