@@ -4,7 +4,9 @@
 
 Command: `ssh cse15lfa23ld@ieng6.ucsd.edu <enter>`
 
-![step4](step4.png)
+![step4a](step4a.png)
+
+![step4b](step4b.png)
 
 ## step 5: Clone your fork of the repository from your Github account (using the SSH URL)
 
