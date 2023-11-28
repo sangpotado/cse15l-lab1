@@ -8,6 +8,12 @@ Command: `ssh cse15lfa23ld@ieng6.ucsd.edu <enter>`
 
 ![step4b](step4b.png)
 
+These 2 snippets below are for resubmission. `ssh key` was added so I could log in to `ieng6` without typing password
+
+![step4a](step4a2.png)
+
+![step4b](step4a22.png)
+
 ## step 5: Clone your fork of the repository from your Github account (using the SSH URL)
 
 copy the SSH URL from github website
@@ -68,3 +74,5 @@ Once inside `vim`, I typed:
 `git push` --> push the change to Github server
 
 ![step9](step9.png)
+
+*Note: I did not include `<enter>` in the commands above, because pressing `<enter>` is mandatory for every command, there's no need to repeat the obvious
