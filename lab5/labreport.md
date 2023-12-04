@@ -1,6 +1,6 @@
 # Lab 5 Report
 
-##Part 1 – Debugging Scenario
+## Part 1 – Debugging Scenario
 Design a debugging scenario, and write your report as a conversation on EdStem. It should have:
 
 ### 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don’t actually make the post! Just write the content that would go in such a post)
@@ -47,14 +47,16 @@ The contents of each file before fixing the bug: shown in part 1 and 3
 
 The full command line (or lines) you ran to trigger the bug: ![p4bashcommand](p4bashcommand.png). These lines are in `grade.sh` script
 
-A description of what to edit to fix the bug:
+A description of what to edit to fix the bug: As shown in step 3, I used `vim` to access and edit the code. 
 
-As shown in step 3, I used `vim` to access and edit the code. 
-
-Then, I would use 
+I then access git repository `https://github.com/sangpotado/lab5bugscenario`, edit the code, and run these commands:
 ```
 git add .
 git commit -m "fix bug"
 git push
 ```
 to make the change to the repository
+
+## Part 2: Reflection
+
+I only know `git` and some Linux terminal commands before this quarter. Now, I have a better understanding about `ssh` and `bash`. I got more comfortable working with remote server now, given that my terminal commands vocabs has increased. Java is not my go-to programming language, but learning about java's server, jdb, process is cool.
