@@ -1,0 +1,118 @@
+speedpotato@goodboi:/mnt/c/Users/sangd$ ssh cs15lfa23ld@ieng6.ucsd.edu
+Last login: Sat Dec  2 13:31:47 2023 from 162-202-223-14.lightspeed.rlghnc.sbcglobal.net
+quota: Cannot resolve mountpoint path /home/linux/staff/.snapshot/hourly.2023-10-03_0801: Stale file handle
+quota: Cannot resolve mountpoint path /home/linux/dsmlp/.snapshot/daily.2023-10-12_0010: Stale file handle
+quota: Cannot resolve mountpoint path /home/linux/dsmlp/.snapshot/daily.2023-11-04_0010: Stale file handle
+quota: Cannot resolve mountpoint path /home/linux/dsmlp/.snapshot/weekly.2023-10-15_0015: Stale file handle
+quota: Cannot resolve mountpoint path /home/linux/dsmlp/.snapshot/daily.2023-10-25_0010: Stale file handle
+Hello cs15lfa23ld, you are currently logged into ieng6-201.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status
+Hostname     Time    #Users  Load  Averages
+ieng6-201   13:30:01   5  0.83,  0.70,  0.73
+ieng6-202   13:30:01   4  0.04,  0.08,  0.13
+ieng6-203   13:30:01   3  0.09,  0.25,  0.21
+
+
+Sat Dec 02, 2023  1:34pm - Prepping cs15lfa23
+[cs15lfa23ld@ieng6-201]:~:174$ ls
+cse15lab8-chat-server  cse15llab7  perl5  tutor  wavelet
+[cs15lfa23ld@ieng6-201]:~:175$ git clone git@github.com:sangpotado/grader-review-sangdo.git
+Cloning into 'grader-review-sangdo'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 28 (delta 11), reused 28 (delta 11), pack-reused 0
+Receiving objects: 100% (28/28), 370.91 KiB | 1.38 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+[cs15lfa23ld@ieng6-201]:~:176$ cd grader-review-sangdo/
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:177$ bash grade.sh
+fatal: repository 'student-submission' does not exist
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:178$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+Cloning into 'student-submission'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Finished cloning
+Student submitted correct file
+student-submission/ListExamples.java coppied to grading-area
+TestListExamples.java coppied to grading-area
+TestListExamples.java:1: error: package org.junit does not exist
+import static org.junit.Assert.*;
+                       ^
+TestListExamples.java:2: error: package org.junit does not exist
+import org.junit.*;
+^
+TestListExamples.java:13: error: cannot find symbol
+  @Test(timeout = 500)
+   ^
+  symbol:   class Test
+  location: class TestListExamples
+TestListExamples.java:19: error: cannot find symbol
+    assertEquals(expected, merged);
+    ^
+  symbol:   method assertEquals(List<String>,List<String>)
+  location: class TestListExamples
+4 errors
+failed to compile
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:179$ vim TestListExamples.java
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:180$ vim grade.sh
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:181$ vim grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+2 files to edit
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:182$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+Cloning into 'student-submission'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Finished cloning
+Student submitted correct file
+student-submission/ListExamples.java coppied to grading-area
+TestListExamples.java coppied to grading-area
+java files compiled
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:183$ cat grading-area/hello.txt
+JUnit version 4.13.2
+.
+Time: 0.013
+
+OK (1 test)
+
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:184$ vim grade.sh
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:185$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+Cloning into 'student-submission'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Finished cloning
+Student submitted correct file
+student-submission/ListExamples.java coppied to grading-area
+TestListExamples.java coppied to grading-area
+java files compiled
+hello.txt
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:186$ vim grade.sh
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:187$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+Cloning into 'student-submission'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Finished cloning
+Student submitted correct file
+student-submission/ListExamples.java coppied to grading-area
+TestListExamples.java coppied to grading-area
+java files compiled
+JUnit version 4.13.2
+.
+Time: 0.015
+
+OK (1 test)
+
+[cs15lfa23ld@ieng6-201]:grader-review-sangdo:188$

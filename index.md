@@ -8,3 +8,5 @@ Hello World!
 [lab 3](./lab3/labreport)
 
 [lab 4](./lab4/labreport)
+
+[lab 5](./lab5/labreport)
